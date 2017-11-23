@@ -1,0 +1,1 @@
+9 - trimal: trimAl is a tool for the automated removal of spurious sequences or poorly aligned regions from a multiple sequence alignment 
