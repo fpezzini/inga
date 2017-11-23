@@ -52,3 +52,6 @@ reference sequence aligned to. The higher the score, the more similar
 they are. A score is calculated by subtracting penalties for each
 difference (mismatch, gap, etc.) and, in local alignment mode, adding
 bonuses for each match.
+
+--score-min <func>
+Sets a function governing the minimum alignment score needed for an alignment to be considered "valid" (i.e. good enough to report). This is a function of read length. For instance, specifying L,0,-0.6 sets the minimum-score function f to f(x) = 0 + -0.6 * x, where x is the read length. See also: setting function options. The default in --end-to-end mode is L,-0.6,-0.6 and the default in --local mode is G,20,8.
